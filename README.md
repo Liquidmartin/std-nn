@@ -8,6 +8,8 @@ The objective is to replace expensive trajectory calculations with fast and accu
 
 ## 📂 Project Structure
 
+```
+.
 ├── O3/                         # Raw QCT data (rr*/out files)
 │
 ├── et_distributions/           # Generated energy distributions
@@ -27,7 +29,7 @@ The objective is to replace expensive trajectory calculations with fast and accu
 ├── conditions.txt
 ├── com_dist.ipynb
 └── README.md
-
+```
 ---
 
 ## 🎯 Objective
