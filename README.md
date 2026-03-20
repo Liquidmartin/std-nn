@@ -8,7 +8,6 @@ The objective is to replace expensive trajectory calculations with fast and accu
 
 ## 📂 Project Structure
 
-.
 ├── O3/                         # Raw QCT data (rr*/out files)
 │
 ├── et_distributions/           # Generated energy distributions
