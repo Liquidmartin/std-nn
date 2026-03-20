@@ -1,0 +1,5 @@
+root        O3
+outdir      et_distributions
+emin        0.0
+emax        10.0
+bin_width   0.1

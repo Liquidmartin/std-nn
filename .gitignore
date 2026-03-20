@@ -1,0 +1,61 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Data (MUY IMPORTANTE)
+# =========================
+
+# Raw QCT data
+data/raw/
+O3/
+rr*/
+
+# Generated distributions
+data/et_distributions/
+et_distributions/
+
+# Processed datasets grandes
+data/processed/
+*.csv
+
+# =========================
+# Models (pesan mucho)
+# =========================
+models/
+*.pt
+*.pth
+
+# =========================
+# Figures (opcional)
+# =========================
+figures/
+*.png
+*.pdf
+
+# =========================
+# Logs / outputs
+# =========================
+*.log
+*.out
+
+# =========================
+# System files
+# =========================
+.DS_Store
+Thumbs.db
