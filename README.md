@@ -167,12 +167,13 @@ Raw QCT data is not included due to size.
 
 Expected structure:
 
+```
 O3/
  ├── rr001/
  │   └── out
  ├── rr002/
  │   └── out
-
+```
 ---
 
 ## 🧩 Future Work
