@@ -10,24 +10,49 @@ The objective is to replace expensive trajectory calculations with fast and accu
 
 ```
 .
-├── O3/                         # Raw QCT data (rr*/out files)
+├── O3/                              # Raw QCT trajectory data
+│   ├── v0-j0-E0.5-1/
+│   │   └── out
+│   ├── v0-j0-E0.5-2/
+│   │   └── out
+│   └── ...
 │
-├── et_distributions/           # Generated energy distributions
-│   ├── distributions/          # Individual P(E_out) files
-│   └── et_distributions_index.csv
+├── scripts_et_dis/                  # Pipeline for P(E'_out) distributions
+│   ├── build_et_distributions.py    # Build raw QCT energy distributions
+│   ├── smooth_et_distributions.py   # Smooth raw distributions
+│   ├── train_nn_et_distribution_smoothed.py
+│   │                               # Train NN using smoothed distributions
+│   │
+│   ├── conditions.txt               # Config file for building distributions
+│   ├── conditions_smooth.txt        # Config file for smoothing
+│   │
+│   ├── et_distributions_exchange/   # Raw QCT P(E'_out) distributions
+│   │   ├── et_grid.dat
+│   │   ├── et_distributions_index.csv
+│   │   ├── distributions/
+│   │   └── plots/
+│   │
+│   ├── et_distributions_exchange_smoothed/
+│   │   ├── et_distributions_smoothed_index.csv
+│   │   ├── distributions/
+│   │   └── comparison_plots/
+│   │
+│   ├── nn_et_distribution_exchange_smoothed/
+│   │   ├── best_model.pt
+│   │   ├── scalers.json
+│   │   ├── energy_grid.dat
+│   │   ├── metrics.json
+│   │   ├── pred_test.npy
+│   │   ├── true_test.npy
+│   │   ├── test_sample_ids.npy
+│   │   ├── loss_curve.png
+│   │   ├── test_examples.png
+│   │   ├── parity_mean.png
+│   │   └── parity_std.png
+│   │
+│   └── visualization/
+│       └── scripts for plotting raw/smoothed distributions
 │
-├── nn_et_moments/              # Trained model (mean & std)
-├── nn_et_distribution/         # Trained model (full distributions)
-│
-├── build_et_distributions.py
-├── build_moments_dataset.py
-├── filtar_data_set.py
-├── train_nn_et_moments.py
-├── train_nn_et_distribution.py
-├── predict_et_moments.py
-│
-├── conditions.txt
-├── com_dist.ipynb
 └── README.md
 ```
 ---
