@@ -1,0 +1,3 @@
+input_dir     et_distributions_exchange
+output_dir    et_distributions_exchange_smoothed
+sigma_ev      0.15

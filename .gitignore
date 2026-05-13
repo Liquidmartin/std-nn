@@ -23,13 +23,16 @@ env/
 
 # Raw QCT data
 data/raw/
+validacion/
+scripts_v_dis/
 O3/
 rr*/
 
 # Generated distributions
-data/et_distributions/
-et_distributions/
-
+scripts_et_dis/et_distributions_exchange/
+scripts_et_dis/et_distributions_exchange_smoothed/
+scripts_et_dis/et_distributions*/
+scripts_et_dis/*nn_et_distribution_exchange_smoothed/
 # Processed datasets grandes
 data/processed/
 *.csv
