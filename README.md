@@ -174,5 +174,4 @@ https://github.com/Liquidmartin
 
 ## 📄 Acknowledgments
 
-This work was developed within a research environment focused on molecular dynamics and machine learning, using QCT simulations and neural network models form Department of Chemistry
-University of Basel of Prof. Dr. Markus Meuwly groupe.
+This work was developed in the Department of Chemistry at the University of Basel, within the research group of Prof. Dr. Markus Meuwly, in a scientific environment focused on molecular dynamics, reaction dynamics, and machine learning.
